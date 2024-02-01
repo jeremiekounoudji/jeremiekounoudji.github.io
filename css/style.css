@@ -1237,6 +1237,12 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-size: cover; /* This will scale the background image to be as large as possible */
+    background-position: center; /* This will center the background image */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    position: relative; /* This allows absolute positioning of children */
+    width: 100%; /* Set the width to 100% of the parent container */
+    /* height: auto; Adjust the height as needed */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1249,9 +1255,9 @@ ol {
   display: inline-block;
   color: #ffffff;
   font-size: 20px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
+  height: 0px;
+  width: 0px;
+  line-height: 0px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
